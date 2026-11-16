@@ -1,0 +1,33 @@
+[project]
+name = "D2C Growth & Profitability Control Tower"
+brand_name = "AuraVeda Skincare (Fictional Indian D2C Brand)"
+currency = "INR"
+timezone = "Asia/Kolkata"
+synthetic_data = true
+random_seed = 42
+start_date = "2026-05-01"
+end_date = "2026-10-31"
+
+[generator]
+num_customers = 3200
+num_orders = 6500
+num_sessions = 48000
+
+[costs]
+prepaid_payment_fee_rate = 0.02
+cod_payment_fee_fixed = 25.0
+
+[data]
+customers = "data/raw/customers.csv"
+products = "data/raw/products.csv"
+orders = "data/raw/orders.csv"
+order_items = "data/raw/order_items.csv"
+sessions = "data/raw/sessions.csv"
+marketing_spend = "data/raw/marketing_spend.csv"
+shipments = "data/raw/shipments.csv"
+returns = "data/raw/returns.csv"
+inventory_snapshots = "data/raw/inventory_snapshots.csv"
+
+[database]
+engine = "duckdb"
+path = "data/processed/d2c_analytics.duckdb"

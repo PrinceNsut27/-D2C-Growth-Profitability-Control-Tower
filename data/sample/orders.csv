@@ -1,0 +1,1 @@
+order_id,customer_id,order_date,order_status,payment_mode,channel,campaign_id,currency,discount_amount,shipping_revenue,tax_amount

@@ -1,0 +1,55 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Packaging & build artifacts
+build/
+dist/
+*.egg-info/
+
+# Secrets & local environment variables
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Generated datasets & local DuckDB databases (keep .gitkeep)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.duckdb
+*.duckdb.wal
+
+# Local development planning & internal workspace notes
+SOUL.md
+AGENTS.md
+PROJECT_CONTEXT.md
+GOAL.md
+CONSTRAINTS.md
+PLAN.md
+TASKS.md
+PROGRESS.md
+prompts/
+docs/ACCEPTANCE_CRITERIA.md
+docs/FINAL_REPORT_TEMPLATE.md
+docs/PRD.md
+docs/RECRUITER_REVIEW.md
+docs/RESUME_BULLETS.md
+docs/screenshots/
+
+# OS & IDE metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
